@@ -44,6 +44,7 @@ Accept Packet:
 I have written test cases using Junit. Two files rules.csv and big_rules.csv are used for testing data. Rules.csv was used to test for edge and specific cases whereas big_rules.csv was used to test against 172k lines. 
 The dataset was obtained from https://github.com/datasets/geoip2-ipv4?files=1 for testing.
 
+The larger dataset took 50 ns to run through "big_rules.csv"
 #### Cases tested
 1. The IPs in incoming packet lie on the boundary of range of IP.
 2. More than one rule match an incoming packet

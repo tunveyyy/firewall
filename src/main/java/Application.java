@@ -2,7 +2,8 @@ import java.io.File;
 
 public class Application {
     public static void main(String[] args) {
-        String filePath = new File(IPExtract.class.getClassLoader().getResource("rules.csv").getFile()).getAbsolutePath();
+        String filePath = new File(IPExtract.class.getClassLoader().getResource("big_rules.csv").getFile()).getAbsolutePath();
+
         Firewall firewall = new Firewall(filePath);
 
         long start = System.nanoTime();

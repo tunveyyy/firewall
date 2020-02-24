@@ -7,7 +7,7 @@ public class testFireWall {
 
     @Test
     public void fireWallTest() {
-        String filePath = new File(IPExtract.class.getClassLoader().getResource("big_rules.csv").getFile()).getAbsolutePath();
+        String filePath = new File(IPExtract.class.getClassLoader().getResource("rules.csv").getFile()).getAbsolutePath();
         Firewall firewall = new Firewall(filePath);
 
         boolean result = firewall.accept_packet("inbound","tcp",10,"100.100.100.1");
