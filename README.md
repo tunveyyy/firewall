@@ -52,3 +52,8 @@ The larger dataset took 50 ns to run through "big_rules.csv"
 
 ## Future Scope
 If I had more time to solve I would have created a custom data structure to store values as ranges for O(1) lookup 
+
+## Team Preferences
+1. Platform
+2. Data 
+3. Policy
