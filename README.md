@@ -1,6 +1,6 @@
 
 ## Introduction
-This a part of Illumio Coding challenge where I have implemented packet filtering through firewall. The system admin initially inputs a set of security rules for firewall as an input (csv file). The firewall rules are defined by direction (inbound or outbound), protocol (tcp or udp), ports (either a single port or a range of ports) and IP address (individual or range of IPs). These rules will define whether the incoming packet will be accepted or not. It is assumed that if the packet is not accepted then it will be blocked automatically. The firewall class provides a constructor to accept the file provided by the sysadmin and creates a set of rules internally. The accept_packet will take a request and return a Boolean which decided if the packet will be accepted or not. 
+I have implemented packet filtering through firewall. The system admin initially inputs a set of security rules for firewall as an input (csv file). The firewall rules are defined by direction (inbound or outbound), protocol (tcp or udp), ports (either a single port or a range of ports) and IP address (individual or range of IPs). These rules will define whether the incoming packet will be accepted or not. It is assumed that if the packet is not accepted then it will be blocked automatically. The firewall class provides a constructor to accept the file provided by the sysadmin and creates a set of rules internally. The accept_packet will take a request and return a Boolean which decided if the packet will be accepted or not. 
 
 ## Assumption
 All the incoming packets are assumed formatted as "direction", "protocol",port(/s), "IP addresses"
@@ -53,7 +53,3 @@ The larger dataset took 50 ns to run through "big_rules.csv"
 ## Future Scope
 If I had more time to solve I would have created a custom data structure to store values as ranges for O(1) lookup 
 
-## Team Preferences
-1. Platform
-2. Data 
-3. Policy
